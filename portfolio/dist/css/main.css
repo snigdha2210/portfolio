@@ -278,6 +278,14 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
+.copyright {
+  height: 2 cm;
+  padding: 5px;
+  background-color: #2E2E2E;
+  color: white;
+  text-align: center;
+}
+
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem; }
