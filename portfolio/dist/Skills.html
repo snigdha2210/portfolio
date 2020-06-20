@@ -67,37 +67,86 @@
   -ms-transform: translate(-50%, -50%);
 }
 
-    .Skills {
+   .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #444444;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.Skills {
   padding-top: 1cm;
   padding-bottom: 1cm;
   background-color: #444444;
+  /*align-items: center;
+  justify-content: center;
+  align-content: center;*/
   display: flex;
   flex-direction: column;
- text-align: center;
+  /* width: 25%;*/
+  text-align: center;
   align-items: center;
-}
-.Skills h1 {
-  padding-bottom: 0.5cm;
-  font-family: "Pacifico", cursive;
+  /* margin-left: initial;*/
 }
 .Skills img {
-  height: 200px;
+  height: 100px;
+  /*display: flex;
+  flex-direction: column;
+  float: left;*/
+  /*padding-left: 0.3cm;*/
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
+  /*-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
 }
 
-.Skills img:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+.flex{
+  display: flex;
+    /* width: 10px; */
+    flex-wrap: wrap;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+}
+div.container-fluid p{
+    font-size: 20px;
 }
   </style>
    <link rel="stylesheet" href="css/main.css">
@@ -147,35 +196,33 @@
   </header>
 
   <main id="work">
-    <h1 class="lg-heading">
-      Technologies
-      <span style="color: #EECE1A;"> I have worked on:</span>
-    </h1>
+    <h1 style="font-size: 50px">Technologies
+      <span style="color: #EECE1A;"> I have worked on:</span></h1>
+    
     <br>
-    <h4 class="sm-heading" style="background-color: rgba(73, 73, 73, 0.5);padding: 0.5rem 1rem;">
-    Working on many more...</h4>
+    <h5 class="sm-heading" style="background-color: rgba(73, 73, 73, 0.5);padding: 0.5rem 1rem;">
+    Working on many more...</h5>
     <br>
     <section id="Skills" >
   <div class="Skills">
-   
-    <div class="container-fluid">
+     <div class="container-fluid">
       <div class="row my-5">
         <div class="col container">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="C language">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" height="100px" alt="C language">
           <div class="overlay">
-            <div class="text"><p>C Programming Language</p></div>
+            <div class="text" style="color: white"><p>C</p></div>
           </div>
         </div>
         <div class="col container">
-          <img src="img/js.png" alt="Javascript">
+          <img src="https://img.icons8.com/color/96/000000/javascript.png" height="100px" alt="Javascript">
           <div class="overlay">
-            <div class="text"><p>Javascript</p></div>
+            <div class="text" style="color: white"><p>Javascript</p></div>
           </div>
         </div>
         <div class="col container">
-          <img src="img/html5.png" alt="HTML 5">
+          <img src="https://img.icons8.com/color/96/000000/html-5.png" height="100px" alt="HTML 5">
           <div class="overlay">
-            <div class="text"><p>HTML(5)</p></div>
+            <div class="text" style="color: white"><p>HTML(5)</p></div>
           </div>
         </div>
       </div>
@@ -183,30 +230,32 @@
         <div class="col container">
           <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-opencode-css-8.png" height="100px" alt="CSS 3">
           <div class="overlay">
-            <div class="text"><p>CSS(3)</p></div>
+            <div class="text" style="color: white"><p>CSS(3)</p></div>
           </div>
         </div>
         <div class="col container">
-          <img src="img/bootstrap.png" height="100px" alt="Bootstrap">
+          <img src="https://img.icons8.com/color/96/000000/bootstrap.png" height="100px" alt="Bootstrap">
           <div class="overlay">
-            <div class="text"><p>Bootstrap</p></div>
+            <div class="text" style="color: white"><p>Bootstrap</p></div>
           </div>
         </div>
         <div class="col container">
           <img src="https://img.icons8.com/ios-filled/100/000000/mysql-logo.png" height="100px" alt="MySql">
           <div class="overlay">
-            <div class="text"><p>MySql</p></div>
+            <div class="text" style="color: white"><p>MySql</p></div>
           </div>
         </div>
       </div>
-      </div>
-      
-    <div class="col container">
+      <div class="row my-5">
+        
+        <div class="col container">
           <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" height="100px" alt="C++">
           <div class="overlay">
-            <div class="text"><p>C++</p></div>
+            <div class="text" style="color: white"><p>C++</p></div>
           </div>
         </div>
+        
+      </div>
     </div>
     <hr>
   </div>
